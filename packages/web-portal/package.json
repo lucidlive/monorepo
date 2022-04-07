@@ -18,7 +18,7 @@
     "@onyx/core": "0.1.0"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "serve -s build",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"

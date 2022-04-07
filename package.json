@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "start": "lerna exec --scope @onyx/web-portal -- serve -s build",
+    "start": "lerna exec --scope @onyx/web-portal -- yarn start",
     "build": "lerna exec --scope @onyx/web-portal -- yarn build"
   },
   "dependencies": {
