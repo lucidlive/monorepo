@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "lerna exec --scope @onyx/web-portal -- yarn start",
-    "build": "yarn lerna bootstrap && yarn add @craco/craco"
+    "build": "yarn lerna bootstrap"
   },
   "dependencies": {
     "craco": "^0.0.3"
