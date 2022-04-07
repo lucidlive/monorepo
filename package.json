@@ -1,10 +1,8 @@
 {
   "name": "@onyx/root",
   "private": true,
-  "dependencies": {
-    "lerna": "^4.0.0",
-    "react": "^18.0.0",
-    "craco": "^0.0.3"
+  "devDependencies": {
+    "lerna": "^4.0.0"
   },
   "workspaces": {
     "packages": [
@@ -13,9 +11,9 @@
   },
   "scripts": {
     "start": "lerna exec --scope @onyx/web-portal -- yarn start",
-    "build": "lerna exec --scope @onyx/web-portal -- yarn build"
+    "build": "yarn lerna bootstrap"
   },
-  "engines": {
-    "node": "^10.9.0"
+  "dependencies": {
+    "craco": "^0.0.3"
   }
 }
