@@ -137,19 +137,19 @@ When deploying an app to Heroku, add the following Buildpack:
 ...and the following environment variables:
 
 ```
-APP_BASE=packages/web-portal
-JS_RUNTIME_TARGET_BUNDLE=/app/packages/web-portal/build/static/js/*.js
+APP_BASE=relative/path/to/app
+JS_RUNTIME_TARGET_BUNDLE=/app/absolute/path/to/build/static/js/*.js
 NODE_ENV=production
-PACKAGE_NAME=web-portal
+PACKAGE_NAME=name-of-your-app
 YARN_PRODUCTION=false
 ```
 
 APP_BASE is the relative path to your app.
 JS_RUNTIME_TARGET_BUNDLE is the absolute path to your static builder folder.
-PACKAGE_NAME is the declared name of the app
-YARN_PRODUCTION must be false otherwise Lerna will fail
+PACKAGE_NAME is the declared name of the app.
+YARN_PRODUCTION must be false otherwise Lerna will fail during build time.
 
-Next, you must include a Procfile in the base on your app:
+Next, you must include a Procfile in the root on your repository with the following contents:
 ```
 web: yarn start
 ```
@@ -163,6 +163,10 @@ Finally, in the root of your project, you can add your custom scripts:
 ```
 
 Note: Heroku automatically executes the build command when it's present.
+
+## TODO
+
+Add multi-proc file support and a multi-proc file buildpack.
 
 ### `yarn dev`
 
