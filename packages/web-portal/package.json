@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "node server.js",
+    "dev": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
