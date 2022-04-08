@@ -1,4 +1,4 @@
-# Lucidlive MonoRepo
+# Onyx MonoRepo
 
 This is a custom setup for managing and deploying multiple packages in a single repo.
 
