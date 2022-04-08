@@ -58,9 +58,16 @@ business logic to be shared across your company, you could add the dependency li
 
 It's important that you're adding the version number that is declared in the dependency's package.json.
 
+## Installing Craco
+
 To make Create React App work properly, we will need to add Craco (Create React App Configuration Override).
 
 > Get all the benefits of create-react-app and customization without using 'eject' by adding a single configuration (e.g. craco.config.js) file at the root of your application and customize your eslint, babel, postcss configurations and many more.
+
+From the root folder, run the following command:
+```
+yarn add -W craco
+```
 
 For every CRA app, you will need to add a craco.config.js file in the project root folder with the following contents:
 
