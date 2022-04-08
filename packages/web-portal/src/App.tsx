@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from "@onyx/core";
+import { TestComponent } from "@onyx/core";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <p>
         Andrew Was Here
         </p>
-          <Button onClick={() => console.log('Clicked')} />
+        <TestComponent />
       </header>
     </div>
   );
