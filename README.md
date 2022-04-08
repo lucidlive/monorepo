@@ -168,7 +168,7 @@ Note: Heroku automatically executes the build command when it's present.
 
 Add multi-proc file support and a multi-proc file buildpack.
 
-## EXAMPLE COMMANDS 
+## Example Commands
 
 ### `yarn dev`
 
