@@ -23,6 +23,8 @@ Next, open the package.json in the root folder give it name similar to the follo
 }
 ```
 
+## Create a New App
+
 All packages must exist under the "packages" folder. To create a new app, simply initialize it within this folder.
 For example, to create a new React app:
 ```
