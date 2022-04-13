@@ -27,10 +27,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "customer-portal",\
         "reference": "workspace:packages/customer-portal"\
-      },\
-      {\
-        "name": "@onyx/web-portal",\
-        "reference": "workspace:packages/web-portal"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -38,7 +34,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@onyx/core", ["workspace:packages/core"]],\
       ["@onyx/root", ["workspace:."]],\
-      ["@onyx/web-portal", ["workspace:packages/web-portal"]],\
       ["customer-portal", ["workspace:packages/customer-portal"]]\
     ],\
     "fallbackPool": [\
@@ -4699,29 +4694,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@onyx/root", "workspace:."],\
             ["craco", "npm:0.0.3"],\
             ["lerna", "npm:4.0.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["@onyx/web-portal", [\
-        ["workspace:packages/web-portal", {\
-          "packageLocation": "./packages/web-portal/",\
-          "packageDependencies": [\
-            ["@onyx/web-portal", "workspace:packages/web-portal"],\
-            ["@onyx/core", "workspace:packages/core"],\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
-            ["@testing-library/react", "virtual:5c1276e4fb7fe5a165addccf3f30a73973ca4ba6a923ba39b089c06a230c7b04bcb506b6d786939a0d046c8cc9a912c0952fc5ca67e809696f23fc34589dd558#npm:12.1.5"],\
-            ["@testing-library/user-event", "virtual:5c1276e4fb7fe5a165addccf3f30a73973ca4ba6a923ba39b089c06a230c7b04bcb506b6d786939a0d046c8cc9a912c0952fc5ca67e809696f23fc34589dd558#npm:13.5.0"],\
-            ["@types/jest", "npm:27.4.1"],\
-            ["@types/node", "npm:16.11.26"],\
-            ["@types/react", "npm:17.0.44"],\
-            ["@types/react-dom", "npm:17.0.15"],\
-            ["express-favicon", "npm:2.0.1"],\
-            ["react", "npm:18.0.0"],\
-            ["react-dom", "virtual:5c1276e4fb7fe5a165addccf3f30a73973ca4ba6a923ba39b089c06a230c7b04bcb506b6d786939a0d046c8cc9a912c0952fc5ca67e809696f23fc34589dd558#npm:18.0.0"],\
-            ["react-scripts", "virtual:5c1276e4fb7fe5a165addccf3f30a73973ca4ba6a923ba39b089c06a230c7b04bcb506b6d786939a0d046c8cc9a912c0952fc5ca67e809696f23fc34589dd558#npm:5.0.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
-            ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -9535,7 +9507,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/customer-portal/",\
           "packageDependencies": [\
             ["customer-portal", "workspace:packages/customer-portal"],\
-            ["@onyx/core", "workspace:packages/core"],\
             ["@types/node", "npm:17.0.23"],\
             ["@types/react", "npm:18.0.3"],\
             ["@types/react-dom", "npm:18.0.0"],\
@@ -11373,15 +11344,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["type-is", "npm:1.6.18"],\
             ["utils-merge", "npm:1.0.1"],\
             ["vary", "npm:1.1.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["express-favicon", [\
-        ["npm:2.0.1", {\
-          "packageLocation": "./.yarn/cache/express-favicon-npm-2.0.1-a771b5be45-00f9103fb1.zip/node_modules/express-favicon/",\
-          "packageDependencies": [\
-            ["express-favicon", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\

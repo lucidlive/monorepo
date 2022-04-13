@@ -10,7 +10,7 @@
   "scripts": {
     "start": "lerna exec --scope @onyx/web-portal -- yarn start",
     "dev": "lerna exec --scope @onyx/web-portal -- yarn dev",
-    "build": "lerna exec --scope @onyx/web-portal -- yarn build",
+    "build": "yarn workspace customer-portal build",
     "customer-portal:start": "yarn workspace customer-portal start",
     "customer-portal:build": "yarn workspace customer-portal build",
     "customer-portal:dev": "yarn workspace customer-portal dev"
@@ -18,5 +18,8 @@
   "dependencies": {
     "craco": "^0.0.3"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "engines": {
+    "node": "16.14.0"
+  }
 }
