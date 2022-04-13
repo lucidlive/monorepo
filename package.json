@@ -8,8 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna exec --scope @onyx/web-portal -- yarn start",
-    "dev": "lerna exec --scope @onyx/web-portal -- yarn dev",
+    "build": "yarn workspaces foreach run build",
     "core:start": "yarn workspace @onyx/core start",
     "core:build": "yarn workspace @onyx/core build",
     "web-portal:start": "yarn workspace web-portal start",
