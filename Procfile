@@ -1,1 +1,1 @@
-web: yarn workspace customer-portal dev  
+web: yarn workspace customer-portal start  

@@ -9507,6 +9507,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/customer-portal/",\
           "packageDependencies": [\
             ["customer-portal", "workspace:packages/customer-portal"],\
+            ["@onyx/core", "workspace:packages/core"],\
             ["@types/node", "npm:17.0.23"],\
             ["@types/react", "npm:18.0.3"],\
             ["@types/react-dom", "npm:18.0.0"],\
