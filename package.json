@@ -10,10 +10,10 @@
   "scripts": {
     "start": "lerna exec --scope @onyx/web-portal -- yarn start",
     "dev": "lerna exec --scope @onyx/web-portal -- yarn dev",
-    "build": "yarn build customer-portal",
-    "customer-portal:start": "yarn start customer-portal",
-    "customer-portal:build": "yarn build customer-portal",
-    "customer-portal:dev": "yarn dev customer-portal"
+    "build": "lerna exec --scope @onyx/web-portal -- yarn build",
+    "customer-portal:start": "yarn workspace customer-portal start",
+    "customer-portal:build": "yarn workspace customer-portal build",
+    "customer-portal:dev": "yarn workspace customer-portal dev"
   },
   "dependencies": {
     "craco": "^0.0.3"
