@@ -10,7 +10,9 @@
   "scripts": {
     "start": "lerna exec --scope @onyx/web-portal -- yarn start",
     "dev": "lerna exec --scope @onyx/web-portal -- yarn dev",
-    "build": "lerna exec --scope @onyx/web-portal -- yarn build",
+    "build": "yarn build customer-portal",
+    "customer-portal:start": "yarn start customer-portal",
+    "customer-portal:build": "yarn build customer-portal",
     "customer-portal:dev": "yarn dev customer-portal"
   },
   "dependencies": {
